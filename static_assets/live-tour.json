@@ -1,0 +1,86 @@
+{
+  "name":"BriteLiteTour",
+  "defaults": {
+    "infos":{
+      "icon":"icons/BL-icon.png"
+    }
+  },
+  "firstSceneId":"Rome-Front",
+  "scenes":[
+    {
+      "id":"Rome-Front",
+      "photopanos":[
+        {"src":"rome_front.jpg"}
+      ],
+      "navs":[
+        {"to":"Colosseum",
+         "icon":"icons/BL-icon.png",
+         "txt":"Visit The Colosseum!"
+        }
+      ],
+      "infos":[
+        {
+          "card":[
+            {"type":"image","src":"Roma_Plan.jpg","ratio":1},
+            {"type":"header","txt":"Temple of Peace"},
+            {"type":"content","txt":"Located just east of the Roman Forum, the massive stone amphitheater known as the Colosseum was commissioned around A.D. 70-72 by Emperor Vespasian of the Flavian dynasty as a gift to the Roman people. "}
+          ],
+          "rotateY": 20,
+          "rotateX": 5,
+          "icon":"icons/white-circle.png"
+        }
+      ],
+      "preloads":[
+        {"src":"Roma_Plan.jpg"}
+      ]
+    },
+    {
+      "id":"Colosseum",
+      "photopanos":[
+        {"src":"colosseum.jpg"}
+      ],
+      "navs":[
+        {"to":"Angels",
+         "icon":"icons/BL-icon.png",
+         "txt":"Enter the tunnel!"
+        }
+      ],
+      "infos":[
+        {
+          "card":[
+            {"type":"image","src":"colosseum_interior.jpg","ratio":1},
+            {"type":"header","txt":"Interior Seating"},
+            {"type":"content","txt":"The Colosseum could accommodate 87,000 people, although modern estimates put the figure at around 50,000. They were seated in a tiered arrangement that reflected the rigidly stratified nature of Roman society.\n"}
+          ],
+          "rotateY": 20,
+          "rotateX": 5,
+          "icon":"icons/white-circle.png"
+        }
+      ]
+    },
+    {
+      "id":"Angels",
+      "videopanos":[
+        {"src":"angels.mp4"}
+      ],
+      "displaytxt":[
+        {"txt":"You Are A Special Snowflake"}
+      ],
+      "infos":[
+        {
+          "card":[
+            {"type":"image","src":"Luminary.jpg","ratio":1},
+            {"type":"header","txt":"Go Into The Light"},
+            {"type":"content","txt":"Over the last year, Britelite has partnered with Future Fires to explore the intersection between art, technology, and music. "},
+            {"type":"row","buttons":[
+              {"txt":"Luminary Exhibit","uri":"http://www.briteliteimmersive.com/blog/portfolio/luminary/"}
+            ]}
+          ],
+          "rotateY": 200,
+          "rotateX": 3,
+          "icon":"icons/white-circle.png"
+        }
+      ]
+    }
+  ]
+}
